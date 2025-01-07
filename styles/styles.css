@@ -37,12 +37,19 @@ p {
   line-height: 24px;
   margin: 4px;
 }
+p.alternate {
+  color:#FFFFFF
+}
 
 h2 {
   font-family: 'Outfit', sans-serif;
   font-size: 40px;
   margin: 0;
   max-width: 416px;
+}
+
+h2.alternate {
+  color: #FFFFFF;
 }
 
 h3 {
@@ -52,6 +59,10 @@ h3 {
   font-weight: 600;
   line-height: 25.2px;
   margin: 0;
+}
+
+h3.alternate {
+  color: #FFFFFF;
 }
 
 h4 {
@@ -291,7 +302,6 @@ button {
 }
 
 .last-card-right {
-  /* position: relative */
   padding: 30px 10px 0 10px;
 }
 
@@ -477,4 +487,37 @@ button {
 .app-features-icon {
   width: 32px;
   height: 32px;
+}
+
+.fourth-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #6729FF;
+  height: 550px;
+  position: relative;
+
+}
+
+.fourth-section-left {
+  width: 485px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.fourth-section-right {
+}
+
+.black-card-img {
+  position: absolute;
+  width: 380px;
+  bottom: 0;
+  z-index: 2;
+}
+
+.purple-card-img {
+  position: absolute;
+  width: 380px;
+  bottom: 0;
+  right: 12%;
 }
