@@ -12,7 +12,6 @@ body {
 
 .main {
   width: 100%;
-  max-width: 1440px; /* Define a largura máxima */
 }
 
 a {
@@ -67,6 +66,7 @@ button {
   line-height: 24px;
   margin-top: auto;
   margin-bottom: auto;
+  cursor: pointer;
 }
 
 .header {
@@ -101,6 +101,7 @@ button {
   font-size: 16px;
   line-height: 24px;
   color: #94A3B8;
+  cursor: pointer;
 }
 
 .logo {
@@ -112,6 +113,7 @@ button {
   font-size: 24px;
   line-height: 24px;
   display: inline;
+  cursor: pointer;
 }
 
 .buttons {
@@ -130,6 +132,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  cursor: pointer;
 }
 
 .first-section {
@@ -212,7 +215,7 @@ button {
 }
 
 .right-banner {
-  width: 736px;
+  width: 52%;
   height: 698px;
   display: flex;
   justify-content: center;
@@ -267,4 +270,73 @@ button {
 .card-icon-container {
   display: flex;
   align-items: center;
+}
+
+.cash-balloon-container {
+  position: absolute;
+  top: 11rem;
+  right: 6.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  background-color: #FFFFFF;
+  height: fit-content;
+  border-radius: 8px;
+  z-index: 10;
+  gap: 10px;
+  padding-right: 8px;
+  padding-left: 8px;
+  box-shadow: #67748A33 0px 12px 8px 0px;
+}
+
+.world-balloon-container {
+  position: absolute;
+  top: 25.5rem;
+  right: 27.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  background-color: #FFFFFF;
+  height: fit-content;
+  border-radius: 8px;
+  z-index: 10;
+  gap: 10px;
+  padding-right: 8px;
+  padding-left: 8px;
+  box-shadow: #67748A33 0px 12px 8px 0px;
+}
+
+.user-balloon-container {
+  position: absolute;
+  top: 34.5rem;
+  right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  background-color: #FFFFFF;
+  height: fit-content;
+  border-radius: 8px;
+  z-index: 10;
+  gap: 10px;
+  padding-right: 8px;
+  padding-left: 8px;
+  box-shadow: #67748A33 0px 12px 8px 0px;
+}
+
+.balloon-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: #EEE5FF;
+}
+
+.balloon-icon {
+  width: 24px;
+  height: 24px;
 }

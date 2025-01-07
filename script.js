@@ -22,10 +22,12 @@ const featuresCards = [
   },
 ];
 
-for (let i = 1; i <= 6; i++) {
+for (let i = 1; i <= 5; i++) {
   const imgPath = `assets/avatares/avatar-0${i}.png`;
   userAvatares.push(imgPath);
 }
+
+userAvatares.push(`assets/images/user-round.svg`)
 
 const avatarContainer = document.getElementById("avatar-container");
 
@@ -35,20 +37,9 @@ userAvatares.map((path, idx) => {
   imgElement.classList.add("avatar");
   imgElement.style.left = `${(idx + 3.5) * 30}px`;
   avatarContainer.appendChild(imgElement);
-
+  
   if (idx === userAvatares.length - 1) {
-    const svgElement = document.createElement("svg");
-    svgElement.classList.add("avatar");
-    svgElement.style.left = `${(idx + 2.5) * 30}px`;
-    svgElement.style.backgroundColor = "#EEE5FF";
-    svgElement.style.display = "flex";
-    svgElement.style.justifyContent = "center";
-    svgElement.style.alignItems = "center";
-    svgElement.style.marginBottom = "30px";
-    svgElement.innerHTML = `<svg width="24" height="24" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M9 11C11.7614 11 14 8.76142 14 6C14 3.23858 11.7614 1 9 1C6.23858 1 4 3.23858 4 6C4 8.76142 6.23858 11 9 11ZM9 11C11.1217 11 13.1566 11.8429 14.6569 13.3431C16.1571 14.8434 17 16.8783 17 19M9 11C6.87827 11 4.84344 11.8429 3.34315 13.3431C1.84285 14.8434 1 16.8783 1 19" stroke="#6729FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  </svg>`;
-    avatarContainer.appendChild(svgElement);
+    imgElement.style.backgroundColor = '#EEE5FF'
   }
 });
 
