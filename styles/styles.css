@@ -32,11 +32,29 @@ a {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 hr {
-  border: 1px solid #E2E8F0;
+  border-top: 1px solid #E2E8F0;
+  border-bottom: 1px solid #E2E8F0;
+  border-left: none;
+  border-right: none;
   width: 100%;
+}
+
+ul li {
+  font-family: 'Poppins', sans-serif;
+  color: #94A3B8;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+
+ul li:last-child {
+  margin-bottom: 0;
 }
 
 p {
@@ -96,6 +114,23 @@ button {
   line-height: 24px;
   margin: auto;
   cursor: pointer;
+}
+
+footer {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+}
+
+input {
+  border-radius: 8px;
+  border: #94A3B8 1px solid;
+  padding: 4px 4px 4px 12px;
+  height: 40px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 8px;
 }
 
 .header {
@@ -429,7 +464,7 @@ button {
 .third-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 1184px;
+  /* width: 1184px; */
   justify-content: flex-start;
   gap: 5rem;
   align-items: center;
@@ -549,4 +584,94 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.footer-menu-container {
+  display: flex;
+  justify-content: space-between;
+  height: 156px;
+  margin: auto;
+  margin-bottom: 6rem;
+  padding: 3.5rem 5rem;
+}
+
+h4.footer-menu-title {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Outfit', sans-serif;
+  color: #64748B;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+ul.footer-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px
+}
+
+.send-email-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #6729FF;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 20%;
+}
+
+.send-email-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.send-email-container {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+}
+
+.footer-menu-column {
+  width: 156px;
+}
+
+.last-footer-menu-column {
+  width: 280px;
+}
+
+.social-media-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social-media-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.last-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5rem 1.5rem 5rem;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+p.small-text {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  line-height: 18px;
+  color: #94A3B8;
 }
