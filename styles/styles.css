@@ -10,6 +10,16 @@ body {
   background-color: #f8f9fa;
 }
 
+h1.call-to-action {
+  color: #FFFFFF;
+  font-size: 96px;
+  font-weight: 500;
+  line-height: 105px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  margin: 1rem;
+}
+
 .main {
   width: 100%;
 }
@@ -84,8 +94,7 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto;
   cursor: pointer;
 }
 
@@ -94,7 +103,6 @@ button {
   position: fixed;
   z-index: 999999;
   width: 100%;
-  max-width: 1440px;
   gap: 2rem;
   justify-content: space-between;
   background-color: #FFFFFF;
@@ -108,7 +116,6 @@ button {
 .nav {
   display: flex;
   width: 100%;
-  max-width: 1440px;
   justify-content: space-between;
   align-items: center;
 }
@@ -520,4 +527,26 @@ button {
   width: 380px;
   bottom: 0;
   right: 12%;
+}
+
+.fifth-section {
+  width: 100%;
+  position: relative
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-items {
+  position: absolute;
+  width: fit-content;
+  bottom: 15%;
+  left: 25%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
