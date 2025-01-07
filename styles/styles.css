@@ -6,8 +6,8 @@ html, body {
 
 body {
   display: flex;
-  justify-content: center; /* Centraliza o conteúdo horizontalmente */
-  background-color: #f8f9fa; /* Cor de fundo opcional */
+  justify-content: center;
+  background-color: #f8f9fa;
 }
 
 .main {
@@ -35,12 +35,14 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin: 4px;
 }
 
 h2 {
   font-family: 'Outfit', sans-serif;
   font-size: 40px;
   margin: 0;
+  max-width: 416px;
 }
 
 h3 {
@@ -405,4 +407,74 @@ button {
 .balloon-icon {
   width: 24px;
   height: 24px;
+}
+
+.third-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1184px;
+  justify-content: flex-start;
+  gap: 5rem;
+  align-items: center;
+  padding: 7%;
+}
+
+.third-section-left {
+  display: grid;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.third-section-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.phone-img-background {
+  width: 100%;
+  height: 280px;
+  align-self: end;
+  background-color: #E2E8F0;
+  border-radius: 8px 8px 0 0;
+  z-index: 2;
+}
+
+.phone-img-2 {
+  position: absolute;
+  width: 54%;
+  left: 7rem;
+  bottom: 0;
+  z-index: 5;
+}
+
+.app-features-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.purple-icon {
+  background-color: #6729FF;
+  color: #E2E8F0;
+}
+
+.app-features-icon-container {
+  background-color: #6729FF;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.app-features-icon {
+  width: 32px;
+  height: 32px;
 }
