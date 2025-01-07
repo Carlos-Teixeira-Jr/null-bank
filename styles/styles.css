@@ -1,0 +1,270 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+}
+
+body {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  background-color: #f8f9fa; /* Cor de fundo opcional */
+}
+
+.main {
+  width: 100%;
+  max-width: 1440px; /* Define a largura máxima */
+}
+
+a {
+  text-decoration: none;
+  color: #94A3B8;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  border: 1px solid #E2E8F0;
+  width: 100%;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  color: #64748B;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 40px;
+}
+
+h3 {
+  color: #6729FF;
+  font-family: 'Outfit', sans-serif;
+}
+
+h4 {
+  color: #6729FF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+button {
+  background-color: #6729FF;
+  color: #FFFFFF;
+  min-width: 176px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  max-width: 1440px;
+  gap: 2rem;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E2E8F0;
+  border-width: 1px;
+  height: 72px;
+  padding: 16px 64px 16px 64px;;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #94A3B8;
+}
+
+.logo {
+  color: #6729FF;
+  width: 100px;
+  height: 24px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  display: inline;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.register-btn {
+  background-color: #6729FF;
+  color: #FFFFFF;
+  min-width: 176px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.first-section {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  width: 100%;
+  margin-top: 6.5rem;
+  border-bottom: #E2E8F0 1px solid;
+}
+
+.left-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 503px;
+  margin: auto;
+  gap: 16px;
+}
+
+.left-banner-title {
+  color: #475569;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 73.6px;
+}
+
+.left-banner-text {
+  color: #64748B;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.left-banner-btn-container {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+.left-banner-btn {
+  background-color: #EEE5FF;
+  color: #6729FF;
+  min-width: 260px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.avatar-container {
+  display: flex;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: absolute;
+  left: auto;
+  border: 1px solid #FFFFFF;
+}
+
+.clients-number {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #94A3B8;
+}
+
+.right-banner {
+  width: 736px;
+  height: 698px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-color: #6729FF;
+  position: relative;
+}
+
+.app-image {
+  width: 390px;
+  height: 610px;
+}
+
+.second-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+  gap: 5rem;
+  margin: 0 5rem 0 5rem
+}
+
+.second-section-left-container {
+  display: flex;
+  min-width: 418px;
+  height: fit-content;
+  flex-direction: column;
+}
+
+.second-section-right-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  border: #E2E8F0 1px solid;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.card-icon-container {
+  display: flex;
+  align-items: center;
+}
