@@ -235,6 +235,7 @@ textarea {
   gap: 97px;
   width: 100%;
   padding: 0 104px 0 104px;
+  position: relative
 }
 
 .second-section-last-row-left {
@@ -505,4 +506,37 @@ p.small-text {
 .error-msg {
   color: red;
   font-size: small;
+}
+
+.success-msg {
+  background-color: greenyellow;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 8px;
+  position: absolute;
+  right: 6%;
+  bottom: 12%;
+  padding: 8px;
+  animation: pulse 2s infinite, fade 15s forwards;
+  opacity: 1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

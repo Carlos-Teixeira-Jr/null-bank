@@ -26,11 +26,21 @@ function validateEmail(email) {
   return emailIsValid;
 }
 
+function successMessage() {
+  const submitBtnElement = document.getElementById("form-button");
+  const successMsgElement = document.createElement("span");
+  successMsgElement.classList.add("success-msg");
+  successMsgElement.textContent = "Dados enviados com sucesso!";
+  submitBtnElement.parentNode.appendChild(successMsgElement);
+}
+
 buttonElement.addEventListener("click", () => {
   const name = nameInputElement.value;
   const lastName = lastNameInputElement.value;
   const email = emailInputElement.value;
   const message = messageInputElement.value;
+
+  successMessage()
 
   let formDataErrors = {
     name: "",
@@ -93,5 +103,7 @@ buttonElement.addEventListener("click", () => {
     };
 
     localStorage.setItem("formData", JSON.stringify(formData));
+
+    successMessage()
   }
 });
