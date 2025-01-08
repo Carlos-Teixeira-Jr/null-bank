@@ -20,6 +20,16 @@ h1 {
   line-height: 73px;
 }
 
+h1.call-to-action {
+  color: #FFFFFF;
+  font-size: 96px;
+  font-weight: 500;
+  line-height: 105px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+  margin: 1rem;
+}
+
 h5 {
   font-family: 'Outfit', sans-serif;
   font-size: 32px;
@@ -34,11 +44,13 @@ h5 {
 
 p {
   margin: 0;
+  color: #64748B;
 }
 
 p.first-section-subtitle {
   width: 416px;
   margin: 0;
+  color: #FFFFFF;
 }
 
 p.phone-number {
@@ -94,6 +106,7 @@ p {
   line-height: 24px;
   margin: 4px;
 }
+
 p.alternate {
   color:#FFFFFF
 }
@@ -194,7 +207,7 @@ textarea {
   background-color: #6729FF;
   color: #FFFFFF;
   display: flex;
-  margin-top: 5rem;
+  margin-top: 4.5rem;
   padding: 64px 384px 64px 112px;
 }
 
@@ -373,6 +386,7 @@ textarea {
   font-size: 16px;
   line-height: 16px;
   cursor: pointer;
+  margin-top: 24px;
   padding: 8px 16px 8px 16px;
 }
 
@@ -464,6 +478,28 @@ p.small-text {
   font-family: 'Poppins', sans-serif;
   line-height: 18px;
   color: #94A3B8;
+}
+
+.fifth-section {
+  width: 100%;
+  position: relative
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-items {
+  position: absolute;
+  width: fit-content;
+  bottom: 15%;
+  left: 25%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .error-msg {

@@ -20,46 +20,59 @@ buttonElement.addEventListener("click", () => {
   const email = emailInputElement.value;
   const message = messageInputElement.value;
 
-  const isOk = false;
+  let formDataErrors = {
+    name: '',
+    lastName: '',
+    email: '',
+    message: ''
+  };
 
-  // Validations
   if (!name) {
-    nameInputElement.style.border = "1px solid red";
-    const errorMsg = document.createElement("p");
-    errorMsg.classList.add("error-msg");
-    errorMsg.textContent = "Por favor, insira seu nome";
-    nameInputElement.parentNode.appendChild(errorMsg);
+    formDataErrors.name = "Por favor, insira seu nome";
   }
+
   if (!lastName) {
-    lastNameInputElement.style.border = "1px solid red";
-    const errorMsg = document.createElement("p");
-    errorMsg.classList.add("error-msg");
-    errorMsg.textContent = "Por favor, insira seu sobrenome";
-    lastNameInputElement.parentNode.appendChild(errorMsg);
+    formDataErrors.lastName = "Por favor, insira seu sobrenome"
   }
   if (!email) {
-    emailInputElement.style.border = "1px solid red";
-    const errorMsg = document.createElement("p");
-    errorMsg.classList.add("error-msg");
-    errorMsg.textContent = "Por favor, insira seu email";
-    emailInputElement.parentNode.appendChild(errorMsg);
+    formDataErrors.email = "Por favor, insira seu email"
   }
   if (!message) {
-    messageInputElement.style.border = "1px solid red";
-    const errorMsg = document.createElement("p");
-    errorMsg.classList.add("error-msg");
-    errorMsg.textContent = "Por favor, insira sua mensagem";
-    messageInputElement.parentNode.appendChild(errorMsg);
+    formDataErrors.message = "Por favor, insira sua mensagem";
   }
-  
-  if (isOk) {
+
+  Object.entries(formDataErrors).forEach(([key, value]) => {
+      const element = document.getElementById(key);
+      const errorMsg = element.parentNode.querySelector(".error-msg");
+      if (errorMsg) {
+        errorMsg.remove()
+      }
+      element.style.border = "#94A3B8 1px solid"
+  })
+
+  Object.entries(formDataErrors).forEach(([key, value]) => {
+    if (value !== '') {
+      const element = document.getElementById(key);
+      element.style.border = "1px solid red";
+
+      const errorMsg = document.createElement("p");
+      errorMsg.classList.add("error-msg");
+      errorMsg.textContent = value;
+
+      element.parentNode.appendChild(errorMsg);
+    }
+  })
+
+  if (!Object.values(formDataErrors).some((value) => value)) {
     const formData = {
       name: name,
       lastName: lastName,
       email: email,
       message: message,
     };
-  
-    localStorage.setItem("formData", JSON.stringify(formData));
+
+    console.log("Deu certo")
+
+    // localStorage.setItem("formData", JSON.stringify(formData));
   }
 });
