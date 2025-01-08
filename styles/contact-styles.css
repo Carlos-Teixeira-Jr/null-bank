@@ -32,6 +32,10 @@ h5 {
   width: 100%;
 }
 
+p {
+  margin: 0;
+}
+
 p.first-section-subtitle {
   width: 416px;
   margin: 0;
@@ -156,7 +160,6 @@ input {
   height: 40px;
   width: 100%;
   margin-top: 4px;
-  margin-bottom: 8px;
   color: #94A3B8;
   font-size: 14px;
   font-weight: 400;
@@ -168,6 +171,7 @@ label {
   font-size: 16px;
   font-weight: 500;
   color: #64748B;
+  margin-bottom: 8px;
 }
 
 textarea {
@@ -177,7 +181,6 @@ textarea {
   height: 120px;
   width: 100%;
   margin-top: 4px;
-  margin-bottom: 8px;
   color: #94A3B8;
   font-size: 14px;
   font-weight: 400;
@@ -345,7 +348,6 @@ textarea {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 8px;
 }
 
 .form-row {

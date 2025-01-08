@@ -27,17 +27,29 @@ buttonElement.addEventListener("click", () => {
     nameInputElement.style.border = "1px solid red";
     const errorMsg = document.createElement("p");
     errorMsg.classList.add("error-msg");
-    errorMsg.textContent = "Por favor, preencha o campo de nome";
+    errorMsg.textContent = "Por favor, insira seu nome";
     nameInputElement.parentNode.appendChild(errorMsg);
   }
   if (!lastName) {
     lastNameInputElement.style.border = "1px solid red";
+    const errorMsg = document.createElement("p");
+    errorMsg.classList.add("error-msg");
+    errorMsg.textContent = "Por favor, insira seu sobrenome";
+    lastNameInputElement.parentNode.appendChild(errorMsg);
   }
   if (!email) {
     emailInputElement.style.border = "1px solid red";
+    const errorMsg = document.createElement("p");
+    errorMsg.classList.add("error-msg");
+    errorMsg.textContent = "Por favor, insira seu email";
+    emailInputElement.parentNode.appendChild(errorMsg);
   }
   if (!message) {
     messageInputElement.style.border = "1px solid red";
+    const errorMsg = document.createElement("p");
+    errorMsg.classList.add("error-msg");
+    errorMsg.textContent = "Por favor, insira sua mensagem";
+    messageInputElement.parentNode.appendChild(errorMsg);
   }
   
   if (isOk) {
