@@ -1,4 +1,11 @@
 const pageName = document.location.pathname;
+const nameInputElement = document.getElementById("name");
+const lastNameInputElement = document.getElementById("lastName");
+const messageInputElement = document.getElementById("message");
+const emailInputElement = document.getElementById("email");
+const submitButtonElement = document.getElementById("form-button");
+const newsLetterInputElement = document.getElementById("newsletter-input");
+const sendEmailButtonElement = document.getElementById("send-email-icon");
 
 if (pageName === "/index.html") {
   const menuOptions = document.getElementsByClassName("home");
@@ -7,12 +14,6 @@ if (pageName === "/index.html") {
   const menuOptions = document.getElementsByClassName("contact");
   menuOptions[0].style.color = "#6729FF";
 }
-
-const nameInputElement = document.getElementById("name");
-const lastNameInputElement = document.getElementById("lastName");
-const messageInputElement = document.getElementById("message");
-const emailInputElement = document.getElementById("email");
-const buttonElement = document.getElementById("form-button");
 
 function validateName(name) {
   const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/;
@@ -26,21 +27,63 @@ function validateEmail(email) {
   return emailIsValid;
 }
 
-function successMessage() {
-  const submitBtnElement = document.getElementById("form-button");
+function successMessage(elementId) {
+  const submitBtnElement = document.getElementById(elementId);
   const successMsgElement = document.createElement("span");
   successMsgElement.classList.add("success-msg");
   successMsgElement.textContent = "Dados enviados com sucesso!";
   submitBtnElement.parentNode.appendChild(successMsgElement);
+
+  setTimeout(() => {
+    successMsgElement.remove();
+  }, 5000);
 }
 
-buttonElement.addEventListener("click", () => {
+sendEmailButtonElement.addEventListener("click", () => {
+  const value = newsLetterInputElement.value;
+  let errorMsg = "";
+
+  if (!value) {
+    errorMsg = "Por favor, insira seu email";
+  }
+
+  if (value && !validateEmail(value)) {
+    errorMsg = "O email informado não é válido";
+  }
+
+  const errorElementExists = newsLetterInputElement.parentNode.querySelector(".error-msg");
+
+  if (errorElementExists) {
+    errorElementExists.remove();
+    newsLetterInputElement.style.border = "#94A3B8 1px solid";
+  }
+
+  if (errorMsg !== "") {
+    newsLetterInputElement.style.border = "1px solid red";
+    const errorMsgElement = document.createElement("p");
+    errorMsgElement.classList.add("error-msg");
+    errorMsgElement.textContent = errorMsg;
+    newsLetterInputElement.parentNode.appendChild(errorMsgElement);
+
+    const emailContainerElement = document.querySelector(".send-email-icon-container");
+
+    emailContainerElement.style.bottom = "53%";
+
+    setTimeout(() => {
+      newsLetterInputElement.style.border = "#94A3B8 1px solid";
+      errorMsgElement.remove();
+      emailContainerElement.style.bottom = "22%";
+    }, 5000);
+  } else {
+    successMessage("send-email-icon-container")
+  }
+});
+
+submitButtonElement.addEventListener("click", () => {
   const name = nameInputElement.value;
   const lastName = lastNameInputElement.value;
   const email = emailInputElement.value;
   const message = messageInputElement.value;
-
-  successMessage()
 
   let formDataErrors = {
     name: "",
@@ -101,9 +144,10 @@ buttonElement.addEventListener("click", () => {
       email: email,
       message: message,
     };
+    console.log("🚀 ~ submitButtonElement.addEventListener ~ formData:", formData)
 
     localStorage.setItem("formData", JSON.stringify(formData));
 
-    successMessage()
+    successMessage("form-button");
   }
 });
