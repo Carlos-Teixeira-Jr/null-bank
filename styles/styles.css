@@ -135,7 +135,7 @@ input {
   height: 40px;
   width: 100%;
   margin-top: 4px;
-  margin-bottom: 8px;
+  position: relative;
 }
 
 .header {
@@ -693,12 +693,19 @@ ul.footer-menu-list {
   margin: auto;
   position: absolute;
   right: 0;
-  top: 20%;
+  top: 23%;
+  cursor: pointer;
+}
+
+.error-msg {
+  color: red;
+  font-size: small;
 }
 
 .send-email-icon {
   width: 16px;
   height: 16px;
+  cursor: pointer;
 }
 
 .send-email-container {
