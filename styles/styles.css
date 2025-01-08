@@ -747,3 +747,28 @@ p.small-text {
   line-height: 18px;
   color: #94A3B8;
 }
+
+@media screen and (max-width: 480px) {
+  button {
+    display: none;
+  }
+
+  .nav {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .logo {
+    width: 25px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+    width: 40px;
+    height: 40px;
+  }
+}

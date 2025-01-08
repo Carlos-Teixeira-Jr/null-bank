@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -14,14 +15,14 @@ body {
 
 h1 {
   margin: 0;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 64px;
   font-weight: 600;
   line-height: 73px;
 }
 
 h1.call-to-action {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 96px;
   font-weight: 500;
   line-height: 105px;
@@ -31,7 +32,7 @@ h1.call-to-action {
 }
 
 h5 {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 32px;
   font-weight: 500;
   color: #475569;
@@ -44,13 +45,13 @@ h5 {
 
 p {
   margin: 0;
-  color: #64748B;
+  color: #64748b;
 }
 
 p.first-section-subtitle {
   width: 416px;
   margin: 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 p.phone-number {
@@ -59,7 +60,7 @@ p.phone-number {
 
 a {
   text-decoration: none;
-  color: #94A3B8;
+  color: #94a3b8;
   cursor: pointer;
 }
 
@@ -70,17 +71,17 @@ ul {
 }
 
 hr {
-  border-top: 1px solid #E2E8F0;
-  border-bottom: 1px solid #E2E8F0;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
   border-left: none;
   border-right: none;
   width: 100%;
-  margin: 65px 0 65px 0;;
+  margin: 65px 0 65px 0;
 }
 
 hr.footer-hr {
-  border-top: 1px solid #E2E8F0;
-  border-bottom: 1px solid #E2E8F0;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
   border-left: none;
   border-right: none;
   width: 100%;
@@ -88,8 +89,8 @@ hr.footer-hr {
 }
 
 ul li {
-  font-family: 'Poppins', sans-serif;
-  color: #94A3B8;
+  font-family: "Poppins", sans-serif;
+  color: #94a3b8;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -100,7 +101,7 @@ ul li:last-child {
 }
 
 p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -108,11 +109,11 @@ p {
 }
 
 p.alternate {
-  color:#FFFFFF
+  color: #ffffff;
 }
 
 h2 {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 40px;
   font-weight: 500;
   margin: 0;
@@ -120,12 +121,12 @@ h2 {
 }
 
 h2.alternate {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 h3 {
-  color: #6729FF;
-  font-family: 'Outfit', sans-serif;
+  color: #6729ff;
+  font-family: "Outfit", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 25.2px;
@@ -133,25 +134,25 @@ h3 {
 }
 
 h3.alternate {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 h4 {
-  color: #6729FF;
-  font-family: 'Poppins', sans-serif;
+  color: #6729ff;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
   margin: 0;
 }
 
 button {
-  background-color: #6729FF;
-  color: #FFFFFF;
+  background-color: #6729ff;
+  color: #ffffff;
   min-width: 176px;
   height: 40px;
   border-radius: 8px;
   border: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -160,7 +161,7 @@ button {
 }
 
 footer {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 100%;
   height: fit-content;
   box-sizing: border-box;
@@ -168,44 +169,44 @@ footer {
 
 input {
   border-radius: 8px;
-  border: #94A3B8 1px solid;
+  border: #94a3b8 1px solid;
   padding: 4px 4px 4px 12px;
   height: 40px;
   width: 100%;
   margin-top: 4px;
-  color: #94A3B8;
+  color: #94a3b8;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 label {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color: #64748B;
+  color: #64748b;
   margin-bottom: 8px;
 }
 
 textarea {
   border-radius: 8px;
-  border: #94A3B8 1px solid;
+  border: #94a3b8 1px solid;
   padding: 4px 4px 4px 12px;
   height: 120px;
   width: 100%;
   margin-top: 4px;
-  color: #94A3B8;
+  color: #94a3b8;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .first-section {
   display: flex;
   gap: 16px;
   flex-direction: column;
-  background-color: #6729FF;
-  color: #FFFFFF;
+  background-color: #6729ff;
+  color: #ffffff;
   display: flex;
   margin-top: 4.5rem;
   padding: 64px 384px 64px 112px;
@@ -217,7 +218,7 @@ textarea {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 64px 216px 64px 216px;
 }
 
@@ -242,36 +243,36 @@ textarea {
   flex-direction: column;
   width: 318px;
   gap: 12px;
-  background-color: #FFFFFF;
-  color: #64748B;
+  background-color: #ffffff;
+  color: #64748b;
 }
 
 .second-section-row-left {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  background-color: #FFFFFF;
-  color: #64748B;
+  background-color: #ffffff;
+  color: #64748b;
 }
 
 .second-section-row-left-top {
   display: flex;
   gap: 24px;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .second-section-row-right {
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
-  color: #64748B;
+  background-color: #ffffff;
+  color: #64748b;
 }
 
 .second-section-row-right-line {
   display: flex;
   align-items: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .icon {
@@ -288,8 +289,8 @@ textarea {
   height: fit-content;
   gap: 2rem;
   justify-content: space-between;
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #E2E8F0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
   border-width: 1px;
   height: 72px;
   align-items: center;
@@ -301,26 +302,26 @@ textarea {
   justify-content: space-between;
   align-items: center;
   padding-left: 64px;
-  padding-right: 64px;	
+  padding-right: 64px;
 }
 
 .menu {
   display: flex;
   align-items: center;
   gap: 40px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #94A3B8;
+  color: #94a3b8;
   cursor: pointer;
 }
 
 .logo {
-  color: #6729FF;
+  color: #6729ff;
   width: 100px;
   height: 24px;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
@@ -334,13 +335,13 @@ textarea {
 }
 
 .register-btn {
-  background-color: #6729FF;
-  color: #FFFFFF;
+  background-color: #6729ff;
+  color: #ffffff;
   min-width: 176px;
   height: 40px;
   border-radius: 8px;
   border: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -370,8 +371,8 @@ textarea {
 }
 
 .form-button {
-  background-color: #6729FF;
-  color: #FFFFFF;
+  background-color: #6729ff;
+  color: #ffffff;
   height: 40px;
   width: fit-content;
   float: right;
@@ -381,7 +382,7 @@ textarea {
   align-items: center;
   border-radius: 8px;
   border: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -402,8 +403,8 @@ textarea {
 h4.footer-menu-title {
   font-size: 16px;
   font-weight: 500;
-  font-family: 'Outfit', sans-serif;
-  color: #64748B;
+  font-family: "Outfit", sans-serif;
+  color: #64748b;
   line-height: 20px;
   margin-bottom: 16px;
 }
@@ -411,7 +412,7 @@ h4.footer-menu-title {
 ul.footer-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 12px
+  gap: 12px;
 }
 
 .send-email-icon-container {
@@ -421,7 +422,7 @@ ul.footer-menu-list {
   width: 32px;
   height: 32px;
   border-radius: 8px;
-  background-color: #6729FF;
+  background-color: #6729ff;
   margin: auto;
   position: absolute;
   right: 0;
@@ -475,14 +476,14 @@ ul.footer-menu-list {
 p.small-text {
   font-size: 12px;
   font-weight: 400;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 18px;
-  color: #94A3B8;
+  color: #94a3b8;
 }
 
 .fifth-section {
   width: 100%;
-  position: relative
+  position: relative;
 }
 
 .banner-img {
