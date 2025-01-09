@@ -8,7 +8,7 @@ body {
 body {
   display: flex;
   justify-content: center;
-  background-color: #f8f9fa;
+  background-color: #FFFFFF;
 }
 
 h1 {
@@ -468,6 +468,7 @@ input::placeholder {
   position: relative;
   overflow: hidden;
   border: 1px solid #e2e8f0;
+  background-color: #F3F2FF;
   border-radius: 8px;
   padding: 15px 20px 20px 20px;
 }
@@ -636,6 +637,7 @@ p.third-section-text {
   left: 7.5rem;
   bottom: 0;
   z-index: 4;
+  box-shadow: #67748a33 0px 12px 12px 0px;
 }
 
 .app-features-container {
@@ -685,6 +687,7 @@ p.third-section-text {
   width: 380px;
   bottom: 0;
   z-index: 2;
+  box-shadow: #67748a33 0px 22px 22px 0px;
 }
 
 .purple-card-img {
@@ -819,6 +822,7 @@ p.small-text {
   line-height: 18px;
   color: #94a3b8;
 }
+
 .mobile-menu-btn {
   display: none;
 }
@@ -837,6 +841,22 @@ p.small-text {
     margin: 0;
   }
 
+  input {
+    font-size: 20px;
+  }
+
+  input::placeholder {
+    font-size: 20px;
+  }
+
+  textarea {
+    font-size: 20px;
+  }
+
+  textarea::placeholder {
+    font-size: 20px;
+  }
+
   h2 {
     font-size: 45px;
   }
@@ -845,15 +865,7 @@ p.small-text {
     font-size: 35px;
   }
 
-  h4 {
-    font-size: 25px;
-  }
-
-  a {
-    font-size: 25px;
-  }
-
-  p {
+  h4, a, p {
     font-size: 25px;
   }
 
@@ -1006,6 +1018,7 @@ p.small-text {
 
   .benefit-card-large {
     width: 382px;
+    background-color: #F3F2FF;
     flex-direction: column;
     gap: 2rem;
     height: fit-content;
@@ -1036,5 +1049,104 @@ p.small-text {
 
   .app-features-text {
     text-align: center;
+  }
+
+  .fourth-section {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+  }
+
+  .fourth-section-left {
+    width: 100%;
+  }
+
+  h3.alternate {
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+  }
+
+  h2.alternate {
+    text-align: center;
+    margin: 1rem 1rem 2rem 1rem;
+    max-width: fit-content;
+  }
+
+  p.alternate {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .stores-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0 2rem 0;
+  }
+
+  .fourth-section-right {
+    width: 100%;
+    height: 400px;
+  }
+
+  .black-card-img {
+    position: absolute;
+    width: 300px;
+    left: 5%;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .purple-card-img {
+    position: absolute;
+    width: 300px;
+    bottom: 0;
+    right: 5%;
+  }
+
+  h1.call-to-action {
+    font-size: 35px;
+    line-height: normal;
+    text-shadow: black 0px 12px 8px;
+    margin-bottom: 6px;
+  }
+
+  .footer-menu-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1rem 0 1rem 0;
+    height: fit-content;
+  }
+
+  h4.footer-menu-title {
+    font-size: 35px;
+  }
+
+  .send-email-container {
+    margin: 3rem 0 3rem 0;
+  }
+
+  .social-media-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .last-footer-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem 2rem 1rem;
+    gap: 3rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p.small-text {
+    font-size: 20px;
   }
 }
