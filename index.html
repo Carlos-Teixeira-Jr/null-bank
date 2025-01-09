@@ -242,8 +242,12 @@
           </p>
 
           <div>
-            <img src="/assets/buttons/google-play-btn.svg" />
-            <img src="/assets/buttons/apple-store-btn.svg" />
+            <a href="https://play.google.com/" target="_blank">
+              <img src="/assets/buttons/google-play-btn.svg" />
+            </a>
+            <a href="https://www.apple.com/br/app-store" target="_blank">
+              <img src="/assets/buttons/apple-store-btn.svg" />
+            </a>
           </div>
         </div>
         <div class="fourth-section-right">
@@ -267,7 +271,7 @@
           <div class="footer-menu-container">
             <div class="footer-menu-column">
               <h4 class="footer-menu-title">Para você</h4>
-              <ul>
+              <ul class="footer-menu-list">
                 <li><a href="/404.html">Contas pessoais</a></li>
                 <li><a href="/404.html">Empréstimos</a></li>
                 <li><a href="/404.html">Investimentos</a></li>
@@ -276,7 +280,7 @@
   
             <div class="footer-menu-column">
               <h4 class="footer-menu-title">NullBank</h4>
-              <ul>
+              <ul class="footer-menu-list">
                 <li><a href="/404.html">Sobre nós</a></li>
                 <li><a href="/404.html">Nossa missão</a></li>
                 <li><a href="/404.html">Blog</a></li>
@@ -285,7 +289,7 @@
   
             <div class="footer-menu-column">
               <h4 class="footer-menu-title">Serviços</h4>
-              <ul>
+              <ul class="footer-menu-list">
                 <li><a href="/404.html">Conta digital</a></li>
                 <li><a href="/404.html">Pix e transferências</a></li>
                 <li><a href="/404.html">Pagamentos online</a></li>
@@ -294,7 +298,7 @@
   
             <div class="footer-menu-column">
               <h4 class="footer-menu-title">Suporte</h4>
-              <ul>
+              <ul class="footer-menu-list">
                 <li><a href="/404.html">Central de ajuda</a></li>
                 <li><a href="/404.html">Fale conosco</a></li>
                 <li><a href="/404.html">Perguntas frequentes</a></li>
@@ -306,9 +310,9 @@
               <p>Receba novidades e dicas financeiras diretamente no seu email.</p>
   
               <div class="send-email-container">
-                <input placeholder="Seu email aqui" />
-                <div class="send-email-icon-container">
-                  <img src="/assets/icons/arrow-icon.svg" class="send-email-icon" />
+                <input placeholder="Seu email aqui" maxlength="254" id="newsletter-input"/>
+                <div class="send-email-icon-container" id="send-email-icon-container">
+                  <img src="/assets/icons/arrow-icon.svg" class="send-email-icon" id="send-email-icon"/>
                 </div>
               </div>
               <div class="social-media-container">
