@@ -52,13 +52,20 @@ hr {
 ul li {
   font-family: 'Poppins', sans-serif;
   color: #94A3B8;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 ul li:last-child {
   margin-bottom: 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  color:dimgray;
 }
 
 p {
@@ -119,6 +126,11 @@ button {
   line-height: 24px;
   margin: auto;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: darkslateblue;
 }
 
 footer {
@@ -136,6 +148,14 @@ input {
   width: 100%;
   margin-top: 4px;
   position: relative;
+}
+
+input::placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #94A3B8;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .header {
@@ -173,6 +193,11 @@ input {
   line-height: 24px;
   color: #94A3B8;
   cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu:hover {
+  color:dimgray;
 }
 
 .logo {
@@ -183,8 +208,14 @@ input {
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
-  display: inline;
+  display: inline-block;
   cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color:darkslateblue;
 }
 
 .buttons {
@@ -262,6 +293,11 @@ input {
   margin: 0;
 }
 
+.left-banner-btn:hover {
+  background-color: dimgray;
+  color: #FFFFFF;
+}
+
 .avatar-container {
   width: 100%;
   position: relative;
@@ -274,6 +310,7 @@ input {
   position: absolute;
   left: 0;
   border: 1px solid #FFFFFF;
+  cursor: pointer;
 }
 
 .avatar-icon-02 {
@@ -283,6 +320,7 @@ input {
   position: absolute;
   left: 2rem;
   border: 1px solid #FFFFFF;
+  cursor: pointer;
 }
 
 .avatar-icon-03 {
@@ -292,6 +330,7 @@ input {
   position: absolute;
   left: 4rem;
   border: 1px solid #FFFFFF;
+  cursor: pointer;
 }
 
 .avatar-icon-04 {
@@ -301,6 +340,7 @@ input {
   position: absolute;
   left: 6rem;
   border: 1px solid #FFFFFF;
+  cursor: pointer;
 }
 
 .avatar-icon-05 {
@@ -310,6 +350,7 @@ input {
   position: absolute;
   left: 8rem;
   border: 1px solid #FFFFFF;
+  cursor: pointer;
 }
 
 .avatar-icon-06 {
@@ -319,6 +360,7 @@ input {
   position: absolute;
   left: 10rem;
   border: 1px solid #FFFFFF;
+  cursor: pointer;
   background-color: #EEE5FF;
 }
 
@@ -609,7 +651,6 @@ p.third-section-text {
   background-color: #6729FF;
   height: 550px;
   position: relative;
-
 }
 
 .fourth-section-left {
@@ -617,9 +658,6 @@ p.third-section-text {
   display: flex;
   flex-direction: column;
   margin: auto;
-}
-
-.fourth-section-right {
 }
 
 .black-card-img {
@@ -679,7 +717,7 @@ h4.footer-menu-title {
 ul.footer-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 12px
+  gap: 20px
 }
 
 .send-email-icon-container {
@@ -695,6 +733,11 @@ ul.footer-menu-list {
   right: 0;
   top: 23%;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-email-icon-container:hover {
+  background-color: darkslateblue;
 }
 
 .error-msg {
@@ -715,9 +758,11 @@ ul.footer-menu-list {
 }
 
 .footer-menu-column {
-  width: 156px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: fit-content;
 }
-
 .last-footer-menu-column {
   width: 280px;
 }
