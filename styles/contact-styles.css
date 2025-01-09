@@ -796,6 +796,11 @@ p.small-text {
     font-size: 20px;
   }
 
+  .success-msg {
+    right: 2%;
+    bottom: 8%;
+  }
+
   /* third section */
 
   h1.call-to-action {
@@ -845,5 +850,3 @@ p.small-text {
     font-size: 20px;
   }
 }
-
-

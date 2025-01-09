@@ -166,7 +166,6 @@ input::placeholder {
 }
 
 .content-container {
-  margin-top: 30rem;
   padding: 10rem;
   display: flex;
   gap: 5rem;
@@ -393,6 +392,10 @@ p.small-text {
   color: #94A3B8;
 }
 
+.mobile-menu-btn {
+  display: none;
+}
+
 @media screen and (max-width: 480px) {
   button {
     display: flex;
@@ -403,6 +406,14 @@ p.small-text {
 
   a {
     font-size: 25px;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  h3 {
+    margin: 2rem 0 2rem 0;
   }
 
   .header {
@@ -466,5 +477,72 @@ p.small-text {
     top: 12rem;
     bottom: 0;
     width: fit-content;
+  }
+
+  /* first section */
+
+  .content-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding: 3rem;
+    gap: 1rem;
+  }
+
+  .content-right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .content-left {
+    width: 100%;
+  }
+
+  .back-home-btn {
+    margin: auto;
+    font-size: 25px;
+    padding: 40px;
+  }
+
+  /* footer */
+
+  .footer-menu-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1rem 0 1rem 0;
+    height: fit-content;
+  }
+
+  h4.footer-menu-title {
+    font-size: 35px;
+  }
+
+  .send-email-container {
+    margin: 3rem 0 3rem 0;
+  }
+
+  .social-media-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .last-footer-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem 2rem 1rem;
+    gap: 3rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  p.small-text {
+    font-size: 20px;
   }
 }
