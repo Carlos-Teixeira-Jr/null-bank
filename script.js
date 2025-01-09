@@ -174,10 +174,7 @@ submitButtonElement.addEventListener("click", () => {
       email: email,
       message: message,
     };
-    console.log(
-      "🚀 ~ submitButtonElement.addEventListener ~ formData:",
-      formData
-    );
+
 
     localStorage.setItem("formData", JSON.stringify(formData));
 
