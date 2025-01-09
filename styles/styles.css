@@ -824,6 +824,12 @@ p.small-text {
 }
 
 @media screen and (max-width: 480px) {
+  body {
+    flex-direction: column;
+    width: 100%;
+    max-width: 480px;
+  }
+
   button {
     display: flex;
     justify-content: center;
@@ -831,7 +837,23 @@ p.small-text {
     margin: 0;
   }
 
+  h2 {
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+
   a {
+    font-size: 25px;
+  }
+
+  p {
     font-size: 25px;
   }
 
@@ -853,7 +875,7 @@ p.small-text {
     height: 40px;
     z-index: 9;
     position: absolute;
-    top: 1rem;
+    top: 0.5rem;
     right: 1.5rem;
   }
 
@@ -896,5 +918,123 @@ p.small-text {
     top: 12rem;
     bottom: 0;
     width: fit-content;
+  }
+
+  .first-section {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .left-banner {
+    width: 100%;
+  }
+
+  .left-banner-title {
+    font-size: 32px;
+    text-align: center;
+    margin: 2rem 1rem 1rem 1rem;
+    line-height: normal;
+  }
+
+  .left-banner-text {
+    font-size: 20px;
+    text-align: center;
+    margin: 1rem;
+    line-height: normal;
+  }
+
+  .left-banner-btn-container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .avatar-container {
+    display: none;
+  }
+
+  .clients-number {
+    display: none;
+  }
+
+  .right-banner {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .cash-balloon-container {
+    right: 1rem;
+  }
+
+  .world-balloon-container {
+    left: 1rem;
+    right: 0;
+    top: 24rem;
+    width: fit-content;
+  }
+
+  .second-section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .second-section-left-container {
+    width: 90%;
+    padding-left: 10px;
+    gap: 2rem;
+  }
+
+  .second-section-right-container {
+    flex-direction: column;
+  }
+
+  .benefits-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .benefit-card-medium {
+    width: 382px;
+    gap: 2rem;
+  }
+
+  .benefit-card-small {
+    width: 382px;
+    gap: 2rem;
+  }
+
+  .benefit-card-large {
+    width: 382px;
+    flex-direction: column;
+    gap: 2rem;
+    height: fit-content;
+  }
+
+  .last-card-right {
+    display: none;
+  }
+
+  .third-section {
+    margin: 10rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .phone-img-2 {
+    left: 5.5rem;
+  }
+
+  .third-section-right {
+    gap: 1rem;
+  }
+
+  .app-features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app-features-text {
+    text-align: center;
   }
 }
