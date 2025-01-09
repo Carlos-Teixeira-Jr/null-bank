@@ -39,6 +39,33 @@ function successMessage(elementId) {
   }, 5000);
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const mobileMenuBtnElement = document.getElementById("mobile-menu-btn");
+  const buttonsComponent = document.getElementById("buttons");
+  const navMenuComponent = document.getElementById("menu");
+  const headerComponent = document.getElementById("header");
+
+
+  if (mobileMenuBtnElement) {
+    let mobileMenuIsOpen = mobileMenuBtnElement.src.includes("menu");
+
+    mobileMenuBtnElement.addEventListener("click", () => {
+      mobileMenuIsOpen = !mobileMenuIsOpen;
+      if (!mobileMenuIsOpen) {
+        mobileMenuBtnElement.src = "assets/icons/close-icon.svg";
+        buttonsComponent.style.display = "block";
+        navMenuComponent.style.display = "flex";
+        headerComponent.style.height = "18rem";
+      } else {
+        mobileMenuBtnElement.src = "assets/icons/mobile-menu.svg";
+        buttonsComponent.style.display = "none";
+        navMenuComponent.style.display = "none";
+        headerComponent.style.height = "4rem";
+      }
+    });
+  }
+});
+
 sendEmailButtonElement.addEventListener("click", () => {
   const value = newsLetterInputElement.value;
   let errorMsg = "";
@@ -51,7 +78,8 @@ sendEmailButtonElement.addEventListener("click", () => {
     errorMsg = "O email informado não é válido";
   }
 
-  const errorElementExists = newsLetterInputElement.parentNode.querySelector(".error-msg");
+  const errorElementExists =
+    newsLetterInputElement.parentNode.querySelector(".error-msg");
 
   if (errorElementExists) {
     errorElementExists.remove();
@@ -65,7 +93,9 @@ sendEmailButtonElement.addEventListener("click", () => {
     errorMsgElement.textContent = errorMsg;
     newsLetterInputElement.parentNode.appendChild(errorMsgElement);
 
-    const emailContainerElement = document.querySelector(".send-email-icon-container");
+    const emailContainerElement = document.querySelector(
+      ".send-email-icon-container"
+    );
 
     emailContainerElement.style.bottom = "53%";
 
@@ -75,7 +105,7 @@ sendEmailButtonElement.addEventListener("click", () => {
       emailContainerElement.style.bottom = "22%";
     }, 5000);
   } else {
-    successMessage("send-email-icon-container")
+    successMessage("send-email-icon-container");
   }
 });
 
@@ -144,7 +174,7 @@ submitButtonElement.addEventListener("click", () => {
       email: email,
       message: message,
     };
-    console.log("🚀 ~ submitButtonElement.addEventListener ~ formData:", formData)
+
 
     localStorage.setItem("formData", JSON.stringify(formData));
 
