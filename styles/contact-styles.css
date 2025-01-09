@@ -90,13 +90,20 @@ hr.footer-hr {
 ul li {
   font-family: 'Poppins', sans-serif;
   color: #94A3B8;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 ul li:last-child {
   margin-bottom: 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  color:dimgray;
 }
 
 p {
@@ -157,6 +164,11 @@ button {
   line-height: 24px;
   margin: auto;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: darkslateblue;
 }
 
 footer {
@@ -177,6 +189,14 @@ input {
   font-size: 14px;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
+}
+
+input::placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: #94A3B8;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 label {
@@ -327,6 +347,12 @@ textarea {
   line-height: 24px;
   display: inline;
   cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  color:darkslateblue;
 }
 
 .buttons {
@@ -389,12 +415,16 @@ textarea {
   cursor: pointer;
   margin-top: 24px;
   padding: 8px 16px 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: darkslateblue;
 }
 
 .footer-menu-container {
   display: flex;
   justify-content: space-between;
-  height: 156px;
   margin: auto;
   margin-bottom: 6rem;
   padding: 3.5rem 5rem;
@@ -412,7 +442,7 @@ h4.footer-menu-title {
 ul.footer-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 12px
+  gap: 20px
 }
 
 .send-email-icon-container {
@@ -428,6 +458,11 @@ ul.footer-menu-list {
   right: 0;
   top: 23%;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-email-icon-container:hover {
+  background-color: darkslateblue;
 }
 
 .send-email-icon {
@@ -443,7 +478,10 @@ ul.footer-menu-list {
 }
 
 .footer-menu-column {
-  width: 156px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: fit-content;
 }
 
 .last-footer-menu-column {
@@ -454,11 +492,17 @@ ul.footer-menu-list {
   display: flex;
   gap: 1.5rem;
   margin-top: 1rem;
+  transition: transform 0.3s ease;
 }
 
 .social-media-icon {
   width: 24px;
   height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-media-icon:hover {
+  transform: scale(1.2);
 }
 
 .last-footer-container {
