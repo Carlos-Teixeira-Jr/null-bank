@@ -233,6 +233,17 @@ input::placeholder {
   transition: color 0.3s ease;
 }
 
+.logo-body {
+  color: #6729ff;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  position: absolute;
+  right: 15%;
+  top: 38%
+}
+
 .menu:hover {
   color: dimgray;
 }
@@ -337,64 +348,37 @@ input::placeholder {
   position: relative;
 }
 
-.avatar-icon-01 {
+.avatar-container img {
   width: 45px;
   height: 45px;
   border-radius: 50%;
   position: absolute;
+  object-fit: cover;
+  border: #ffffff 3px solid;
+}
+
+.avatar-icon-01 {
   left: 0;
-  border: 1px solid #ffffff;
-  cursor: pointer;
 }
 
 .avatar-icon-02 {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  position: absolute;
   left: 2rem;
-  border: 1px solid #ffffff;
-  cursor: pointer;
 }
 
 .avatar-icon-03 {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  position: absolute;
   left: 4rem;
-  border: 1px solid #ffffff;
-  cursor: pointer;
 }
 
 .avatar-icon-04 {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  position: absolute;
   left: 6rem;
-  border: 1px solid #ffffff;
-  cursor: pointer;
 }
 
 .avatar-icon-05 {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  position: absolute;
   left: 8rem;
-  border: 1px solid #ffffff;
-  cursor: pointer;
 }
 
 .avatar-icon-06 {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  position: absolute;
   left: 10rem;
-  border: 1px solid #ffffff;
-  cursor: pointer;
   background-color: #eee5ff;
 }
 
@@ -435,6 +419,7 @@ input::placeholder {
 
 .second-section-left-container {
   display: flex;
+  position: relative;
   height: fit-content;
   gap: 8px;
   justify-content: center;
@@ -1225,6 +1210,11 @@ p.small-text {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .logo-body {
+    top: 32%;
+    left: 47%;
   }
 
   p.small-text {
