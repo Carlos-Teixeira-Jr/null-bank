@@ -1,6 +1,6 @@
 html,
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
   width: 100%;
 }
@@ -8,7 +8,7 @@ body {
 body {
   display: flex;
   justify-content: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 h1 {
@@ -171,7 +171,7 @@ input::placeholder {
   width: 100%;
   height: fit-content;
   gap: 2rem;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #ffffff;
   border-bottom: 1px solid #e2e8f0;
   border-width: 1px;
@@ -190,7 +190,7 @@ input::placeholder {
 
 .success-msg {
   background-color: greenyellow;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   border-radius: 8px;
   position: absolute;
   right: 6%;
@@ -206,6 +206,7 @@ input::placeholder {
   justify-content: center;
   gap: 40px;
   margin-top: 2px;
+  padding: 12px 32px 12px 32px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -236,15 +237,12 @@ input::placeholder {
   color: dimgray;
 }
 
-.logo {
+.logo, .logo-footer {
   color: #6729ff;
-  width: 100px;
-  height: 24px;
   font-family: "Outfit", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
-  display: inline-block;
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -429,6 +427,7 @@ input::placeholder {
 
 .second-section {
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 1.5fr;
   justify-items: center;
   margin-top: 5rem;
@@ -484,7 +483,7 @@ input::placeholder {
   position: relative;
   overflow: hidden;
   border: 1px solid #e2e8f0;
-  background-color: #F3F2FF;
+  background-color: #f3f2ff;
   border-radius: 8px;
   padding: 15px 20px 20px 20px;
 }
@@ -801,14 +800,21 @@ ul.footer-menu-list {
   gap: 12px;
   width: fit-content;
 }
+
 .last-footer-menu-column {
   width: 280px;
+}
+
+p.newsletter-text {
+  color: #94a3b8;
+  font-weight: 400;
 }
 
 .social-media-container {
   display: flex;
   gap: 1.5rem;
   margin-top: 1rem;
+  transition: transform 0.3s ease;
 }
 
 .social-media-icon {
@@ -901,7 +907,9 @@ p.small-text {
     font-size: 35px;
   }
 
-  h4, a, p {
+  h4,
+  a,
+  p {
     font-size: 25px;
   }
 
@@ -950,7 +958,7 @@ p.small-text {
   .register {
     position: absolute;
     left: 0;
-    top: 3.5rem;
+    bottom: 5%;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -975,6 +983,11 @@ p.small-text {
 
   .left-banner {
     width: 100%;
+  }
+
+  .banner-items {
+    left: 17%;
+    bottom: 10%;
   }
 
   .left-banner-title {
@@ -1024,12 +1037,13 @@ p.small-text {
   .second-section {
     display: flex;
     width: 100%;
+    gap: 5rem;
     flex-direction: column;
   }
 
   .second-section-left-container {
     width: 90%;
-    padding-left: 10px;
+    margin: auto;
     gap: 2rem;
   }
 
@@ -1054,14 +1068,20 @@ p.small-text {
 
   .benefit-card-large {
     width: 382px;
-    background-color: #F3F2FF;
-    flex-direction: column;
-    gap: 2rem;
-    height: fit-content;
+    height: 100%;
+    display: flex;
+    background-color: #f3f2ff;
   }
 
   .last-card-right {
     display: none;
+  }
+
+  .last-card-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .third-section {
@@ -1071,7 +1091,7 @@ p.small-text {
   }
 
   .phone-img-2 {
-    left: 5.5rem;
+    left: 5rem;
   }
 
   .third-section-right {
@@ -1085,6 +1105,9 @@ p.small-text {
 
   .app-features-text {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
   .fourth-section {
@@ -1096,6 +1119,7 @@ p.small-text {
 
   .fourth-section-left {
     width: 100%;
+    gap: 1rem;
   }
 
   h3.alternate {
@@ -1107,6 +1131,8 @@ p.small-text {
     text-align: center;
     margin: 1rem 1rem 2rem 1rem;
     max-width: fit-content;
+    font-weight: 300;
+    line-height: 40px;
   }
 
   p.alternate {
@@ -1116,9 +1142,14 @@ p.small-text {
 
   .stores-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    align-items: center;
+    gap: 2rem;
     margin: 2rem 0 2rem 0;
+  }
+  .app-stores-btn {
+    width: 300px;
   }
 
   .fourth-section-right {
@@ -1142,25 +1173,33 @@ p.small-text {
   }
 
   h1.call-to-action {
-    font-size: 35px;
+    font-size: 45px;
     line-height: normal;
     text-shadow: black 0px 12px 8px;
     margin-bottom: 6px;
   }
 
+  /* footer */
+
   .footer-menu-container {
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
     margin: 1rem 0 1rem 0;
     height: fit-content;
   }
 
   h4.footer-menu-title {
     font-size: 35px;
+    margin-bottom: 4rem;
   }
 
   .send-email-container {
     margin: 3rem 0 3rem 0;
+    max-width: none;
+  }
+
+  .social-media-container {
+    justify-content: space-between;
   }
 
   .social-media-icon {
@@ -1176,6 +1215,10 @@ p.small-text {
     gap: 3rem;
   }
 
+  .last-footer-menu-column {
+    width: 100%;
+  }
+
   .footer-links {
     flex-direction: column;
     align-items: center;
@@ -1184,5 +1227,11 @@ p.small-text {
 
   p.small-text {
     font-size: 20px;
+  }
+
+  /* errors */
+
+  .error-msg {
+    font-size: large;
   }
 }
