@@ -518,6 +518,7 @@ p.small-text {
     flex-wrap: nowrap;
     font-size: 18px;
     font-size: 25px;
+    padding: 0;
   }
 
   .buttons {

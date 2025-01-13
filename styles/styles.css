@@ -884,6 +884,7 @@ p.small-text {
   }
 
   input {
+    width: none;
     font-size: 20px;
   }
 
@@ -965,6 +966,7 @@ p.small-text {
     flex-wrap: nowrap;
     font-size: 18px;
     font-size: 25px;
+    padding: 0;
   }
 
   .buttons {
