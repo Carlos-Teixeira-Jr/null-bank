@@ -155,6 +155,10 @@ input {
   width: 100%;
   margin-top: 4px;
   margin-bottom: 8px;
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
 }
 
 input::placeholder {
@@ -394,6 +398,44 @@ p.small-text {
 
 .mobile-menu-btn {
   display: none;
+}
+
+.error-msg {
+  color: red;
+  font-size: small;
+}
+
+.success-msg {
+  background-color: greenyellow;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 8px;
+  position: absolute;
+  right: 6%;
+  bottom: 12%;
+  padding: 8px;
+  animation: pulse 2s infinite, fade 5s forwards;
+  opacity: 1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
