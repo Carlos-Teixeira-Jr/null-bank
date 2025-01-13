@@ -233,6 +233,17 @@ input::placeholder {
   transition: color 0.3s ease;
 }
 
+.logo-body {
+  color: #6729ff;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  position: absolute;
+  right: 15%;
+  top: 38%
+}
+
 .menu:hover {
   color: dimgray;
 }
@@ -435,6 +446,7 @@ input::placeholder {
 
 .second-section-left-container {
   display: flex;
+  position: relative;
   height: fit-content;
   gap: 8px;
   justify-content: center;
@@ -1225,6 +1237,11 @@ p.small-text {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .logo-body {
+    top: 32%;
+    left: 47%;
   }
 
   p.small-text {
