@@ -106,6 +106,7 @@ sendEmailButtonElement.addEventListener("click", () => {
     }, 5000);
   } else {
     successMessage("send-email-icon-container");
+    localStorage.setItem("email", value);
   }
 });
 
