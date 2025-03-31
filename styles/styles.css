@@ -240,8 +240,8 @@ input::placeholder {
   font-size: 24px;
   line-height: 24px;
   position: absolute;
-  right: 15%;
-  top: 38%
+  right: 1.5rem;
+  top: 5.8rem
 }
 
 .menu:hover {
