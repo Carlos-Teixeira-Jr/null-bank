@@ -2,7 +2,7 @@ html,
 body {
   margin: auto;
   padding: 0;
-  width: 100%;
+  max-width: 1366px;
 }
 
 body {
@@ -546,7 +546,7 @@ input::placeholder {
 .world-balloon-container {
   position: absolute;
   top: 25.5rem;
-  right: 27.5rem;
+  left: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
